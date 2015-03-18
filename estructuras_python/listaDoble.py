@@ -1,15 +1,16 @@
-class Nodo (objeto):
+class Nodo ():
 	
-	def _init_(self, dato, anterior, siguiente):
+	def __init__(self, dato, anterior, siguiente):
 		self.dato = dato
 		self.anterior = anterior
 		self.siguiente = siguiente
 		
 		
-class ListaDoble(objeto)
+class ListaDoble():
 	
-	encabezado =None
-	cola = None
+	def __init__(self):
+		encabezado =None
+		cola = None
 	
 	def append(self, dato):
 		nuevoNodo = Nodo(dato, None, None)
@@ -35,7 +36,7 @@ class ListaDoble(objeto)
 					
 			current_nodo = current_nodo.siguiente
 			
-	def mostrar(self)
+	def mostrar(self):
 		print "mostrar lista de datos"
 		current_nodo = self.encabezado
 		while current_nodo is not None:
