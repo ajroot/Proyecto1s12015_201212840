@@ -345,9 +345,9 @@ public class usuarios extends javax.swing.JFrame {
         }
         String contraseña=this.txtContasena.getText();
             char c=contraseña.charAt(0);
-            if ((c >= 'a' && c <= 'z' ) || (c >= 'A' && c <= 'Z' ))
+            if (!((c >= 'a' && c <= 'z' ) || (c >= 'A' && c <= 'Z' )))
             {
-                JOptionPane.showMessageDialog(null,"muestra","muestra",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null,"Debe de empezar con A-Z","Debe de Empezar con Letra",JOptionPane.ERROR_MESSAGE);
             }
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
