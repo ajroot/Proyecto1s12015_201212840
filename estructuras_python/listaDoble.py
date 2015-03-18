@@ -1,50 +1,105 @@
-class Nodo ():
-	
-	def __init__(self, dato, anterior, siguiente):
+class Nodo:
+	def __init__ (self, dato):
 		self.dato = dato
-		self.anterior = anterior
-		self.siguiente = siguiente
+		self.siguiente = self.anterior = None
 		
-		
-class ListaDoble():
-	
+class lista:
 	def __init__(self):
-		encabezado =None
-		cola = None
+		self.encabezado = self.cola = None
 	
-	def append(self, dato):
-		nuevoNodo = Nodo(dato, None, None)
-		if self.encabezado is None:
-			self.encabezado = self.cola = nuevoNodo
+	def insertarPrimerNodo(self, nuevoNodo):
+		self.encabezado = self.cola = nuevoNodo
+		self.encabezado.anterior = self.cola.siguiente= None
+		
+	def insertarNodoCola(self, dato):
+		nuevoNodo = Nodo(dato)
+		if self.encabezado == None:
+			self.insertarPrimerNodo(nuevoNodo)
+			
 		else:
+			self.cola.siguiente=nuevoNodo
 			nuevoNodo.anterior = self.cola
-			nuevoNodo.siguiente = None
-			self.cola.siguiente = nuevoNodo
 			self.cola = nuevoNodo
 			
-	def borrar(self, valuarNodo):
-		current_nodo=self.encabezado
-		
-		while current_nodo is not None:
-			if current_nodo.dato == valuarNodo:
-				if current_nodo.anterior is not None:
-					current_nodo.anterior.siguiente = current_nodo.siguiente
-					current_nodo.siguiente.anterior = current_nodo.anterior
-				else:
-					self.encabezado = current_nodo.siguiente
-					current_nodo.siguiente.anterior = None
-					
-			current_nodo = current_nodo.siguiente
-			
-	def mostrar(self):
-		print "mostrar lista de datos"
-		current_nodo = self.encabezado
-		while current_nodo is not None:
-			"""current_nodo mostrara el dato del nodo"""
-			print current_nodo.anterior.dato if hasattr(current_nodo.anteriorm, "dato") else None,
-			print current_nodo.dato
-			print current_nodo.siguiente.dato if hasattr(current_nodo.siguiente, "dato") else None
-			
-			current_nodo = current_nodo.siguiente
+		self.cola.siguiente = None
 	
+	def insertarInicio (self, dato):
+		nuevoNodo = Nodo(dato)
+		if self.encabezado == None:
+			self.insertarInicio(nuevoNodo)
 			
+		else:
+			self.encabezado.anterior = nuevoNodo
+			nuevoNodo.siguiente = self.encabezado
+			self.encabezado = nuevoNodo
+			
+	def eliminarInicio(self):
+		self.anterior = self.siguiente = self.encabezado = self.cola = None
+	
+	def eliminarUltimo(self):
+		nodo = self.cola
+		if self.encabezado == None:
+			print "lista Vacia"
+			return
+		elif self.encabezado == self.cola:
+			self.eliminarInicio()
+			return
+		else:
+			self.cola = nodo.anterior
+			self.cola.siguiente = None
+			
+	def eliminarEncabezado(self):
+		nodo = self.encabezado
+		if self.encabezado == None:
+			print "lista vacia"
+			return
+		
+		if self.encabezado == self.cola:
+			self.eliminarInicio()
+			return
+		
+		if self.encabezado != self.cola:
+			nodo =nodo.siguiente
+			nodo.anterior = None
+			self.encabezado = nodo
+			
+	def eliminarNodo(self, elemento):
+		nodo = self.encabezado
+		encontrado = False
+		if self.encabezado == self.cola and self.encabezado.dato != elemento:
+			print "elemento no encontrado"
+			return
+		if self.encabezado.dato == elemento:
+			self.eliminarEncabezado()
+			
+		while nodo.siguiente !=None:
+			if nodo.siguiente.dato == elemento:
+				encontrado = True
+				break
+			else:
+				nodo= nodo.siguiente
+			
+		if encontrado:
+			if nodo.siguiente.siguiente != None:
+				temp = nodo.siguiente
+				nodo.siguiente = temp.siguiente
+				nodo = temp.siguiente.anterior
+				
+			else:
+				self.eliminarUltimo()
+		else:
+			print "elemento no encontrado"
+			
+	def mostrar(list):
+		nodo = list.encabezado
+		if list.encabezado == None:
+			print "vacia"
+			while nodo is not None:
+				print "%d" %(nodo.dato)
+				nodo = nodo.siguiente
+				if nodo is not None:
+					print "asdf"
+				
+		
+		
+		
