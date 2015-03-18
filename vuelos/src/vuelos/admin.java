@@ -31,51 +31,53 @@ public class admin extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        txtNombreAeropuerto = new javax.swing.JTextField();
+        txtUbicacion = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtContraseña = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jComboBox7 = new javax.swing.JComboBox();
         jLabel16 = new javax.swing.JLabel();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        jRadioButton7 = new javax.swing.JRadioButton();
+        rbtnVuelo = new javax.swing.JRadioButton();
+        rbtnArribo = new javax.swing.JRadioButton();
+        rbtnAeropuerto = new javax.swing.JRadioButton();
         jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtLugarLlegada = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        txtHoraSalida = new javax.swing.JTextField();
+        rbtnSalidaAm = new javax.swing.JRadioButton();
+        rbtnSalidaPm = new javax.swing.JRadioButton();
         jLabel6 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox();
         jComboBox2 = new javax.swing.JComboBox();
         jComboBox3 = new javax.swing.JComboBox();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        txtHoraLlegada = new javax.swing.JTextField();
+        rbtnLlegadaAm = new javax.swing.JRadioButton();
+        rbtnLlegadaPm = new javax.swing.JRadioButton();
         jLabel9 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        txtCantPrimera = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        txtPrecioPrimera = new javax.swing.JTextField();
+        txtCantTurista = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
+        txtPrecioTurista = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        txtCantEjecutiva = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
+        txtPrecioEjecutiva = new javax.swing.JTextField();
+        btnCrearVuelo = new javax.swing.JButton();
         jComboBox4 = new javax.swing.JComboBox();
         jComboBox5 = new javax.swing.JComboBox();
         jComboBox6 = new javax.swing.JComboBox();
+        jLabel17 = new javax.swing.JLabel();
+        txtId = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -100,15 +102,15 @@ public class admin extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1))
+                        .addComponent(txtNombreAeropuerto))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE))
+                        .addComponent(txtUbicacion, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField3))
+                        .addComponent(txtContraseña))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1)))
@@ -120,15 +122,15 @@ public class admin extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNombreAeropuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtUbicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
                 .addContainerGap(223, Short.MAX_VALUE))
@@ -142,11 +144,26 @@ public class admin extends javax.swing.JFrame {
 
         jLabel16.setText("Estado:");
 
-        jRadioButton5.setText("En vuelo:");
+        rbtnVuelo.setText("En vuelo:");
+        rbtnVuelo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtnVueloActionPerformed(evt);
+            }
+        });
 
-        jRadioButton6.setText("Arribo");
+        rbtnArribo.setText("Arribo");
+        rbtnArribo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtnArriboActionPerformed(evt);
+            }
+        });
 
-        jRadioButton7.setText("Aeropuerto");
+        rbtnAeropuerto.setText("Aeropuerto");
+        rbtnAeropuerto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtnAeropuertoActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Borrar");
 
@@ -164,11 +181,11 @@ public class admin extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton7)
+                        .addComponent(rbtnAeropuerto)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton5)
+                        .addComponent(rbtnVuelo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton6)
+                        .addComponent(rbtnArribo)
                         .addGap(0, 127, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -185,9 +202,9 @@ public class admin extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(jRadioButton5)
-                    .addComponent(jRadioButton6)
-                    .addComponent(jRadioButton7))
+                    .addComponent(rbtnVuelo)
+                    .addComponent(rbtnArribo)
+                    .addComponent(rbtnAeropuerto))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton3)
                 .addContainerGap(258, Short.MAX_VALUE))
@@ -199,17 +216,33 @@ public class admin extends javax.swing.JFrame {
 
         jLabel4.setText("Lugar de Llegada:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 14, -1, -1));
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 11, 285, -1));
+        jPanel1.add(txtLugarLlegada, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 11, 285, -1));
 
         jLabel5.setText("Hora Salida:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 110, -1));
 
-        jRadioButton1.setText("A.M.");
-        jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, -1, -1));
+        txtHoraSalida.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtHoraSalidaKeyTyped(evt);
+            }
+        });
+        jPanel1.add(txtHoraSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 110, -1));
 
-        jRadioButton2.setText("P.M.");
-        jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, -1, -1));
+        rbtnSalidaAm.setText("A.M.");
+        rbtnSalidaAm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtnSalidaAmActionPerformed(evt);
+            }
+        });
+        jPanel1.add(rbtnSalidaAm, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, -1, -1));
+
+        rbtnSalidaPm.setText("P.M.");
+        rbtnSalidaPm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtnSalidaPmActionPerformed(evt);
+            }
+        });
+        jPanel1.add(rbtnSalidaPm, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, -1, -1));
 
         jLabel6.setText("Fecha Salida:");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 71, -1, -1));
@@ -228,40 +261,56 @@ public class admin extends javax.swing.JFrame {
 
         jLabel8.setText("Fecha Llegada:");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 120, -1));
 
-        jRadioButton3.setText("A.M.");
-        jPanel1.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, -1, -1));
+        txtHoraLlegada.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtHoraLlegadaKeyTyped(evt);
+            }
+        });
+        jPanel1.add(txtHoraLlegada, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 120, -1));
 
-        jRadioButton4.setText("P.M.");
-        jPanel1.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, -1, -1));
+        rbtnLlegadaAm.setText("A.M.");
+        rbtnLlegadaAm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtnLlegadaAmActionPerformed(evt);
+            }
+        });
+        jPanel1.add(rbtnLlegadaAm, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, -1, -1));
+
+        rbtnLlegadaPm.setText("P.M.");
+        rbtnLlegadaPm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtnLlegadaPmActionPerformed(evt);
+            }
+        });
+        jPanel1.add(rbtnLlegadaPm, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, -1, -1));
 
         jLabel9.setText("Pasajeros Primera Clase:");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
-        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 50, -1));
+        jPanel1.add(txtCantPrimera, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 50, -1));
 
         jLabel10.setText("Pasajeros Clase Turista:");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
 
         jLabel11.setText("Precio:");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
-        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 60, -1));
-        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 50, -1));
+        jPanel1.add(txtPrecioPrimera, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 60, -1));
+        jPanel1.add(txtCantTurista, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 50, -1));
 
         jLabel13.setText("Precio:");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, -1, -1));
-        jPanel1.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 60, -1));
+        jPanel1.add(txtPrecioTurista, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 60, -1));
 
         jLabel14.setText("Pasajeros Clase Ejecutiva:");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
-        jPanel1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 50, -1));
+        jPanel1.add(txtCantEjecutiva, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 50, -1));
 
         jLabel15.setText("Precio:");
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, -1, -1));
-        jPanel1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, 60, -1));
+        jPanel1.add(txtPrecioEjecutiva, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, 60, -1));
 
-        jButton2.setText("Crear Vuelo");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, -1, -1));
+        btnCrearVuelo.setText("Crear Vuelo");
+        jPanel1.add(btnCrearVuelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, -1, -1));
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
         jPanel1.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, -1, -1));
@@ -271,6 +320,10 @@ public class admin extends javax.swing.JFrame {
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2015", "2016", "2017", "2018" }));
         jPanel1.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
+
+        jLabel17.setText("ID:");
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
+        jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 230, -1));
 
         jTabbedPane1.addTab("Creacion de vuelos", jPanel1);
 
@@ -295,6 +348,95 @@ public class admin extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+int control=0;
+    private void txtHoraSalidaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHoraSalidaKeyTyped
+        // TODO add your handling code here:
+        char c= evt.getKeyChar();
+        if(Character.isLetter(c)){
+            evt.consume();
+            
+            
+        }
+        else
+        {
+            control++;
+        }
+        if(control==3)
+            {
+                txtHoraSalida.setText(txtHoraSalida.getText()+":");
+            }
+        else if(control >4)
+        {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtHoraSalidaKeyTyped
+
+    private void txtHoraLlegadaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHoraLlegadaKeyTyped
+        // TODO add your handling code here:
+          char c= evt.getKeyChar();
+        if(Character.isLetter(c)){
+            evt.consume();
+            
+            
+        }
+        else
+        {
+            control++;
+        }
+        if(control==3)
+            {
+                txtHoraLlegada.setText(txtHoraLlegada.getText()+":");
+            }
+        else if(control >4)
+        {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtHoraLlegadaKeyTyped
+
+    private void rbtnAeropuertoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnAeropuertoActionPerformed
+        // TODO add your handling code here:
+        this.rbtnAeropuerto.setSelected(true);
+        this.rbtnArribo.setSelected(false);
+        this.rbtnVuelo.setSelected(false);
+    }//GEN-LAST:event_rbtnAeropuertoActionPerformed
+
+    private void rbtnVueloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnVueloActionPerformed
+        // TODO add your handling code here:
+        this.rbtnAeropuerto.setSelected(false);
+        this.rbtnArribo.setSelected(false);
+        this.rbtnVuelo.setSelected(true);
+    }//GEN-LAST:event_rbtnVueloActionPerformed
+
+    private void rbtnArriboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnArriboActionPerformed
+        // TODO add your handling code here:
+        this.rbtnAeropuerto.setSelected(false);
+        this.rbtnArribo.setSelected(true);
+        this.rbtnVuelo.setSelected(false);
+    }//GEN-LAST:event_rbtnArriboActionPerformed
+
+    private void rbtnSalidaAmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnSalidaAmActionPerformed
+        // TODO add your handling code here:
+        this.rbtnSalidaAm.setSelected(true);
+        this.rbtnSalidaPm.setSelected(false);
+    }//GEN-LAST:event_rbtnSalidaAmActionPerformed
+
+    private void rbtnLlegadaAmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnLlegadaAmActionPerformed
+        // TODO add your handling code here:
+        this.rbtnLlegadaAm.setSelected(true);
+        this.rbtnLlegadaPm.setSelected(false);
+    }//GEN-LAST:event_rbtnLlegadaAmActionPerformed
+
+    private void rbtnLlegadaPmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnLlegadaPmActionPerformed
+        // TODO add your handling code here:
+        this.rbtnLlegadaAm.setSelected(false);
+        this.rbtnLlegadaPm.setSelected(true);
+    }//GEN-LAST:event_rbtnLlegadaPmActionPerformed
+
+    private void rbtnSalidaPmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnSalidaPmActionPerformed
+        // TODO add your handling code here:
+        this.rbtnSalidaAm.setSelected(false);
+        this.rbtnSalidaPm.setSelected(true);
+    }//GEN-LAST:event_rbtnSalidaPmActionPerformed
 
     /**
      * @param args the command line arguments
@@ -332,8 +474,8 @@ public class admin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCrearVuelo;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBox2;
@@ -350,6 +492,7 @@ public class admin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -364,25 +507,26 @@ public class admin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JRadioButton rbtnAeropuerto;
+    private javax.swing.JRadioButton rbtnArribo;
+    private javax.swing.JRadioButton rbtnLlegadaAm;
+    private javax.swing.JRadioButton rbtnLlegadaPm;
+    private javax.swing.JRadioButton rbtnSalidaAm;
+    private javax.swing.JRadioButton rbtnSalidaPm;
+    private javax.swing.JRadioButton rbtnVuelo;
+    private javax.swing.JTextField txtCantEjecutiva;
+    private javax.swing.JTextField txtCantPrimera;
+    private javax.swing.JTextField txtCantTurista;
+    private javax.swing.JTextField txtContraseña;
+    private javax.swing.JTextField txtHoraLlegada;
+    private javax.swing.JTextField txtHoraSalida;
+    private javax.swing.JTextField txtId;
+    private javax.swing.JTextField txtLugarLlegada;
+    private javax.swing.JTextField txtNombreAeropuerto;
+    private javax.swing.JTextField txtPrecioEjecutiva;
+    private javax.swing.JTextField txtPrecioPrimera;
+    private javax.swing.JTextField txtPrecioTurista;
+    private javax.swing.JTextField txtUbicacion;
     // End of variables declaration//GEN-END:variables
 }
